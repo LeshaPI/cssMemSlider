@@ -7,7 +7,14 @@
 body{
     background-color: rgb(41, 23, 96);
 }
+
 .wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.full_slider{
+    margin-top: 50px;
     width: 600px;
 }
 
@@ -19,7 +26,7 @@ body{
 .slider_track{
     display: flex;
     background-color: white;
-    transition: 1s;
+    transition: 0.5s;
     position: relative;
     left: 0px;
 }
@@ -66,4 +73,13 @@ body{
 .button_item:hover{
     background-color: white;
     border: 2px solid white;
+}
+
+.animation{
+    width: 17px;
+    height: 17px;
+}
+
+.active{
+    background-color: rgb(41, 23, 96);
 }

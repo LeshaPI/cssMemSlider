@@ -21,6 +21,15 @@ text.forEach((item) =>{
 
 bottomItem.forEach((it,index) => {
     bottomItem[index].addEventListener('click',() =>{
+
+       bottomItem[index].classList.add('animation'); 
+       setTimeout(() => {bottomItem[index].classList.remove('animation')},300);
+
+       bottomItem.forEach((item) => {
+           item.classList.remove('active');
+       })
+
+       bottomItem[index].classList.add('active');
        sliderTrack.style.left = `-${itemWidth * index}px`;
        visibletext.style.left = `-${textWidth*index}px`;
     })
