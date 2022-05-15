@@ -62,11 +62,18 @@ bottomItem.forEach((it,index) => {
 })
 
 
+const debounce =  (fn,ms) =>{
+    let timeout;
+    return function (){
+        const fnCall = () => {fn.apply(this,arguments)}
+        
+        clearTimeout(timeout);
 
+        timeout = setTimeout(fnCall,ms);
+    }
+}
 
-
-window.addEventListener('resize',() => {
-
+function ResizeFunc(){
     if(window.matchMedia("(min-width: 768px)").matches) {
         sliderBody.style.width = '600px';
         textBody.style.cssText =`flex-direction: row; width: 600px;`
@@ -83,6 +90,10 @@ window.addEventListener('resize',() => {
         GenerateSlider();
         ItemWithGeneration(lastIndex);
     }
-})
+}
+
+ResizeFunc = debounce(ResizeFunc,250);
+
+window.addEventListener('resize',ResizeFunc);
 
   
