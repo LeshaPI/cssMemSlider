@@ -10,17 +10,18 @@ body{
 
 .wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+   
 }
 
-.full_slider{
-    margin-top: 50px;
-    width: 600px;
-}
 
 .slider{
     overflow: hidden;
     background-color: black;
+    margin-top: 50px;
+    width: 600px;
 }
 
 .slider_track{
@@ -39,6 +40,7 @@ body{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    width: 600px;
 }
 
 .slider_text{
