@@ -22,7 +22,7 @@ body{
     background-color: black;
     border-radius: 5%;
     margin-top: 50px;
-    width: 600px;
+    width: 40%;
 }
 
 .slider_track{
@@ -34,20 +34,20 @@ body{
 }
 
 .slider_item{
-    height: 300px;
+    height: 400px;
 }
 
 .slider_content{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 40%;
 }
 
 .slider_text{
     overflow: hidden;
     color: white;
-    width: 100px;
+    width: 85px;
 }
 
 .text_body{
@@ -72,6 +72,7 @@ body{
     border: 2px solid black;
     border-radius: 50%;
 }
+
 
 .button_item:hover{
     background-color: white;

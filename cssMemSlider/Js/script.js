@@ -1,4 +1,3 @@
-let position = 0;
 const visibleSlide = 1;
 const sliderBody = document.querySelector('.slider');
 const sliderTrack = document.querySelector('.slider_track');
@@ -75,8 +74,8 @@ const debounce =  (fn,ms) =>{
 
 function ResizeFunc(){
     if(window.matchMedia("(min-width: 768px)").matches) {
-        sliderBody.style.width = '600px';
-        textBody.style.cssText =`flex-direction: row; width: 600px;`
+        sliderBody.style.width = '40%';
+        textBody.style.cssText =`flex-direction: row; width: 40%;`
         sliderText.style.cssText = `margin:0; padding: 0;`
         GenerateSlider();
         ItemWithGeneration(lastIndex);
